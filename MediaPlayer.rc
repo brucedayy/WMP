@@ -1,0 +1,254 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MediaPlayer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MediaPlayer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 89
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 MediaPlayer"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "MediaPlayer 1.0版",IDC_STATIC,41,13,119,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "程序由戴延军设计\n湖南理工学院计算机学院13级4班\n\n版权所有(C)2015",IDC_STATIC,43,34,137,45
+END
+
+IDD_MEDIAPLAYER_DIALOG DIALOGEX 0, 0, 497, 247
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CLIPCHILDREN | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MediaPlayer"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_MEDIAPLAYER,
+                    "{6BF52A52-394A-11D3-B153-00C04F79FAA6}",WS_TABSTOP,3,16,237,153
+    PUSHBUTTON      "打开文件",IDC_OPENFILE,250,35,50,14
+    PUSHBUTTON      "播放",IDC_PLAY,250,79,50,14
+    PUSHBUTTON      "暂停",IDC_PAUSE,250,102,50,14
+    PUSHBUTTON      "停止",IDC_STOP,250,124,50,14
+    PUSHBUTTON      "全屏",IDC_FULLSCREEN,250,165,50,14
+    PUSHBUTTON      "-",IDC_SUBVOL,262,217,10,10
+    PUSHBUTTON      "+",IDC_ADDVOL,278,218,10,9
+    PUSHBUTTON      "快进",IDC_SPEED,127,228,50,14
+    PUSHBUTTON      "快退",IDC_FALL,185,228,50,14
+    PUSHBUTTON      "播放列表",IDC_PLAYLIST,250,57,50,14
+    CONTROL         "List1",IDC_LISTP,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,313,17,180,229
+    PUSHBUTTON      "上一曲",IDC_LASTSONG,7,228,50,14
+    PUSHBUTTON      "下一曲",IDC_NEXTSONG,66,228,50,14
+    CONTROL         "静音",IDC_CHECKMUTE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,262,231,32,10
+    PUSHBUTTON      "退出",IDC_QUIT,250,145,50,14
+    CONTROL         "Slider2",IDC_SLIDERVOL,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,249,204,51,13
+    GROUPBOX        "播放控制",IDC_STATIC,245,17,60,168,BS_CENTER,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    CONTROL         "顺序播放",IDC_RADIOSEQUENCEPLAY,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,16,213,48,10
+    CONTROL         "随机播放",IDC_RADIORANDOMPLAY,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,100,214,48,10
+    CONTROL         "循环播放",IDC_RADIOLOOPPLAY,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,184,214,48,10
+    GROUPBOX        "播放模式",IDC_STATIC,4,195,235,52,0,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    GROUPBOX        "音量控制",IDC_STATIC,244,191,61,56,BS_CENTER,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    CONTROL         "",IDC_SLIDERPOCESS,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,0,169,244,13
+    CTEXT           "Static",IDC_CURRENTPOS,4,182,25,8
+    CTEXT           "Static",IDC_ENDPOS,213,181,25,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "MediaPlayer Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "MediaPlayer"
+            VALUE "LegalCopyright", "版权所有 (C) 2013"
+            VALUE "OriginalFilename", "MediaPlayer.EXE"
+            VALUE "ProductName", "MediaPlayer 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_MEDIAPLAYER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 490
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MEDIAPLAYER_DIALOG DLGINIT
+BEGIN
+    IDC_MEDIAPLAYER, 0x376, 168, 0
+0x0000, 0x0000, 0x0300, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0005, 
+0x0000, 0x0000, 0x0000, 0x3ff0, 0x0003, 0x0000, 0x0000, 0x0005, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0003, 0x0001, 
+0x0000, 0x000b, 0xffff, 0x0003, 0x0000, 0x0000, 0x000b, 0xffff, 0x0008, 
+0x0002, 0x0000, 0x0000, 0x0003, 0x0032, 0x0000, 0x000b, 0x0000, 0x0008, 
+0x000a, 0x0000, 0x006e, 0x006f, 0x006e, 0x0065, 0x0000, 0x000b, 0x0000, 
+0x000b, 0x0000, 0x000b, 0xffff, 0x000b, 0xffff, 0x000b, 0x0000, 0x0008, 
+0x0002, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 0x0002, 
+0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x000b, 0x0000, 0x24cb, 
+0x0000, 0x17c5, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "res\\bitmap1.bmp"
+IDB_BITMAP2             BITMAP                  "res\\bitmap2.bmp"
+IDB_BITMAP3             BITMAP                  "res\\bitmap3.bmp"
+IDB_BITMAP4             BITMAP                  "res\\bitmap4.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 MediaPlayer(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\MediaPlayer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

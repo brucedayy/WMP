@@ -1,1 +1,1 @@
-Show About By double-click Title
+Visual Studio Community 2015

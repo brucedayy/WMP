@@ -1,1 +1,1 @@
-鼠标右键双击标题栏显示About
+Show About By double-click Title
